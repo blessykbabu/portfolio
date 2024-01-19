@@ -6,8 +6,14 @@ export default function Contact() {
   return (
     <>
       <div className="container-fluid">
-        <h4 style={{ textAlign: "center", color: "white" }}>contact me</h4>
-        <p style={{ textAlign: "justify", color: "white" }}>
+        {/* <h4 style={{ textAlign: "center", color: "white" }} className="m_head">contact me</h4> */}
+        <svg viewBox="0 0 1320 300">
+          <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+            Contact Me
+          </text>
+        </svg>
+       
+        <p style={{ textAlign: "justify", color: "white" }} className="contact">
           Thank you for visiting! Your thoughts and inquiries are important to
           me. Please feel free to send me a message, and I'll get back to you as
           soon as possible. Let's connect and explore new possibilities

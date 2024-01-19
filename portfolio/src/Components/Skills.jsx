@@ -2,7 +2,13 @@ export default function Skills(){
     return(
         <>
         <div className="conatainer-fluid">
-            <h4 style={{textAlign:"center"}}>Skills Showcase: Unveiling My Proficiencies</h4>
+            {/* <h4 style={{textAlign:"center"}} className="m_head">Skills Showcase: Unveiling My Proficiencies</h4> */}
+     
+         <svg viewBox="5 5 2220 300">
+  <text x="50%" y="50%" dy=".1em" text-anchor="middle">
+    Skills Showcase: Unveiling My Proficiencies
+  </text>
+</svg>
        <div className="skills-container shadow p-3 mb-5 bg-body-tertiary rounded">
 
       <div className="skill-card ">

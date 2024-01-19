@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada&family=Poppins:wght@100&display=swap');
+
+
 body{
   background: linear-gradient(to right, #3498db, #2ecc71);
 }
@@ -324,10 +328,16 @@ box-shadow: 0 0 20px 5px #00fffc;
 
 .about{
   line-height:30px;
+  /* font-family: 'Black Ops One', system-ui; */
+  font-family:'Courier New', Courier, monospace;
+
+  color:mediumblue;
+  font-size: 20px;
 }
 .tab{
-  color:rgb(181, 215, 208);
-  font-weight: bold;
+  color:#0b0d0f;
+  font-weight:bold;
+  font-family:'Courier New', Courier, monospace;
 }
 
 
@@ -378,3 +388,44 @@ box-shadow: 0 0 20px 5px #00fffc;
   color: #555;
 }
 
+.m_head{
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+/* ********** */
+
+
+svg {
+  font-family: 'Russo One', sans-serif;
+  /* position: absolute;  */
+  width: 50%; height: 50%;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 1;
+  stroke: #365fa0;
+  font-size: 80px;
+}
+@keyframes stroke {
+  0%   {
+    fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+  }
+  70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+  80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+  100% {
+    fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+  }
+}
+
+/* ********** */
+.prj{
+  color: #d3e1e5;
+  font-size: 16px;
+}
+
+.contact{
+  font-family: monospace;
+  font-size: 20px;
+}

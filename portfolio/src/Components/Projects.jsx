@@ -1,11 +1,30 @@
   
  import web from "../image/web.png";
+ import e from "../image/hr.jpg";
+ import s from "../image/ecom.jpg";
+ import { Link } from "react-router-dom";
   export default function Projects() {
   return (
     <>
       <div className="container-fluid">
-        <h4  className="mb-3" style={{textAlign:"center"}}>Projects</h4>
-        <div className="container">
+        {/* <h4  className="mb-3 m_head" style={{textAlign:"center"}}>Projects</h4> */}
+        <svg viewBox="0 0 1320 300">
+          <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+          Projects
+          </text>
+        </svg>
+     <div className="container">
+      <div className="row">
+        <div className="col-6">
+         <Link to="https://github.com/blessykbabu/ems-server"> <img src={e} height={300} width={300}/></Link>
+        </div>
+        <div className="col-6">
+          <Link to="https://github.com/blessykbabu/e-prjct"><img src={s} height={300} width={300}/></Link>
+        </div>
+      </div>
+     </div>
+
+        <div className="container prj">
          <img src={web} style={{display:"inline-block"}} /> <h5 style={{textAlign:"center",display:"inline-block"}} className="m-3">Employee Mnagement system</h5>
           <p>
             Introducing an Employee Management System built with React, Express,
@@ -62,7 +81,7 @@ Employee Self-Service:
           </ol>
         </div>
 
-        <div className="container">
+        <div className="container prj">
         <img src={web} style={{display:"inline-block"}} /> <h5 style={{textAlign:"center",display:"inline-block"}} className="m-3">E-commerce</h5>
           <p>
             React E-Commerce Platform with MongoDB: Connecting Sellers and
