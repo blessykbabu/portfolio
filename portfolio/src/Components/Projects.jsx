@@ -2,8 +2,21 @@
  import web from "../image/web.png";
  import e from "../image/hr.jpg";
  import s from "../image/ecom.jpg";
+ import c from "../image/c.jpg";
+ import b from "../image/b.jfif";
  import { Link } from "react-router-dom";
-  export default function Projects() {
+import { useState } from "react";
+import Ems from "./ems";
+import Ezy from "./Ezy";
+import Blog from "./Blog";
+import Bookmyshow from "./Bookmyshow";
+  export default function Projects(){
+    const [selectedComponent, setSelectedComponent] = useState(null);
+
+    const handleLinkClick = (component) => {
+      setSelectedComponent(null);
+      setSelectedComponent(component);
+    };
   return (
     <>
       <div className="container-fluid">
@@ -13,7 +26,7 @@
           Projects
           </text>
         </svg>
-     <div className="container">
+     {/* <div className="container">
       <div className="row">
         <div className="col-6">
          <Link to="https://github.com/blessykbabu/ems-server"> <img src={e} height={300} width={300}/></Link>
@@ -144,8 +157,57 @@ Employee Self-Service:
               </p>
             </ol>
           </p>
-        </div>
+        </div> */}
+
+
+
+
+
+<div className="row row-cols-1 row-cols-md-3 g-4">
+  <div className="col">
+    <div className="card">
+     <Link to="/projects/ems" onClick={() => handleLinkClick(<Ems/>)}> <img  src={e} height={300} className="card-img-top c-img" alt="..." /></Link> 
+  
+    </div>
+  </div>
+
+  <div className="col">
+    <div className="card">
+    <Link to="/projects/ezy" onClick={() => handleLinkClick(<Ezy/>)}><img src={s} height={300}  className="card-img-top c-img" alt="..." /></Link>
+      {/* <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+       
       </div>
+      <div className="card-footer">
+        <small className="text-muted">Last updated 3 mins ago</small>
+      </div> */}
+    </div>
+  </div>
+  <div className="col">
+    <div className="card">
+    <Link to="/projects/blogs" onClick={() => handleLinkClick(<Blog/>)}> <img  src={b}  height={300} className="card-img-top c-img" alt="..." /></Link>
+     
+    </div>
+  </div>
+
+
+
+
+  <div className="col">
+    <div className="card ">
+    <Link to="/projects/movieHub" onClick={() => handleLinkClick(<Bookmyshow/>)}> <img src={c} height={300}  className="card-img-top c-img" alt="..." /></Link>
+      
+    </div>
+  </div>
+</div>
+
+
+<div className="row">
+{selectedComponent}
+</div>
+      </div>
+
+    
     </>
   );
 }

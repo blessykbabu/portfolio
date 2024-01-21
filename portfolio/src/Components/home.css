@@ -4,7 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada&family=Poppins:wght@100&display=swap');
 
 
-body{
+.main{
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  height: 100vh;
+ 
+}
+.n{
   background: linear-gradient(to right, #3498db, #2ecc71);
 }
 
@@ -246,11 +251,11 @@ font-family:monospace;
       width: 0;
   }
   to {
-      width: 100%;
+      width:100%;
   }
 }
 /* ******************** */
-.main{
+.main2{
   position:relative;
   top:130px;
 }
@@ -267,16 +272,42 @@ font-family:monospace;
   font-weight:bol;
 }
 
+
+
+
+
+.open-cv-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;  
+
+  padding-right: 30px;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px; 
+}
+.open-cv-button:hover{
+  background-color: #3498db;
+}
+
+
 .two-sided-layout {
   display: flex;
   /* background: linear-gradient(to right, #3498db, #2ecc71); */
   color: white; 
 }
 
-.left-side {
+/* .left-side {
   flex: 1;
   /* padding: 20px; */
-}
+
 
 /* .right-side {
   flex: 1;
@@ -335,13 +366,38 @@ box-shadow: 0 0 20px 5px #00fffc;
   font-size: 20px;
 }
 .tab{
-  color:#0b0d0f;
+  color:#0c2ffb;
   font-weight:bold;
   font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 
 
-/* skill */
+.tab {
+  /* width: 70%; */
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #5f91c0;
+}
+
+tr:hover {
+  background-color: #66beed;
+}
+
+
+
+td a:hover {
+  text-decoration: underline;
+}
+
 
 
 /* Skills.css */
@@ -365,7 +421,9 @@ box-shadow: 0 0 20px 5px #00fffc;
   width: 300px;
   margin: 10px;
   padding: 20px;
-  background-color: #fff;
+  background-color:#2ecc71;
+  color:rgb(52, 52, 241);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card-heading {
@@ -421,11 +479,23 @@ svg text {
 
 /* ********** */
 .prj{
-  color: #d3e1e5;
+  color:rgb(147, 147, 238);
   font-size: 16px;
+}
+.c-img{
+  border-radius: 5px;
+}
+.c-img:hover{
+ opacity: 0.5;
+
 }
 
 .contact{
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
+  color: #0c2ffb;
   font-size: 20px;
 }
+
+/* @ */
+
+

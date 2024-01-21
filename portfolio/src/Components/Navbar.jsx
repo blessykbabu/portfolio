@@ -5,7 +5,7 @@ import "./home.css";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg n">
         <div className="container-fluid">
         <Link
                 to="/"

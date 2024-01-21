@@ -13,7 +13,7 @@ export default function Contact() {
           </text>
         </svg>
        
-        <p style={{ textAlign: "justify", color: "white" }} className="contact">
+        <p style={{ textAlign: "justify" }} className="contact">
           Thank you for visiting! Your thoughts and inquiries are important to
           me. Please feel free to send me a message, and I'll get back to you as
           soon as possible. Let's connect and explore new possibilities

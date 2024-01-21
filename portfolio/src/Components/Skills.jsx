@@ -43,7 +43,7 @@ export default function Skills(){
       </div>
 
       <div className="skill-card">
-        <h3 className="card-heading">Database:</h3>
+        <h3 className="card-heading">Database</h3>
         <ul className="skill-list">
           <li>MongoDB</li>
           <li>MySQL</li>

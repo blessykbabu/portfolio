@@ -30,17 +30,17 @@ export default function About() {
           <tbody>
             <tr>
               <td style={{ padding: 20 }}>Name</td>
-              <td style={{ padding: 20 }}>:</td>
+              {/* <td style={{ padding: 20 }}>:</td> */}
               <td style={{ padding: 20 }}>Blessy K Babu</td>
             </tr>
             <tr>
               <td style={{ padding: 20 }}>Date Of Birth</td>
-              <td style={{ padding: 20 }}>:</td>
+              {/* <td style={{ padding: 20 }}>:</td> */}
               <td style={{ padding: 20 }}>October 11,1999</td>
             </tr>
             <tr>
               <td style={{ padding: 20 }}>Address</td>
-              <td style={{ padding: 20 }}>:</td>
+              {/* <td style={{ padding: 20 }}>:</td> */}
               <td style={{ padding: 20 }}>
                 Kaleeckal ,Elimullumplackal P O ,Avolikuzhy
               </td>
@@ -50,7 +50,7 @@ export default function About() {
                 <td style={{ verticalAlign: "top" }}>:</td>
                 <td style={{ verticalAlign: "top" }}>{Data.description}</td> */}
               <td style={{ padding: 20 }}>Email</td>
-              <td style={{ padding: 20 }}>:</td>
+              {/* <td style={{ padding: 20 }}>:</td> */}
               {/* <Link > */}
               <td style={{ padding: 20 }}>blessykbabu5@gmail.com</td>
               {/* </Link> */}
